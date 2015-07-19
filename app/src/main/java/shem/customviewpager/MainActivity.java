@@ -42,32 +42,6 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-
-
-//        findViewById(R.id.stage_1).setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                mPager.setCurrentItem(0, true);
-//            }
-//        });
-//        findViewById(R.id.stage_2).setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                mPager.setCurrentItem(1, true);
-//            }
-//        });
-//        findViewById(R.id.stage_3).setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                mPager.setCurrentItem(2, true);
-//            }
-//        });
-//        findViewById(R.id.stage_4).setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                mPager.setCurrentItem(3, true);
-//            }
-//        });
     }
 
     /**
