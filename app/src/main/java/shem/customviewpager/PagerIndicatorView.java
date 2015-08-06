@@ -16,24 +16,24 @@ import android.widget.TextView;
 /**
  * Created by shem on 7/17/15.
  */
-public class ProgressView extends ViewGroup {
+public class PagerIndicatorView extends ViewGroup {
 
     private Paint paint;
     private int index;
     private float prec;
     private int[] colors;
 
-    public ProgressView(Context context) {
+    public PagerIndicatorView(Context context) {
         super(context);
         init();
     }
 
-    public ProgressView(Context context, AttributeSet attrs) {
+    public PagerIndicatorView(Context context, AttributeSet attrs) {
         super(context, attrs);
         init();
     }
 
-    public ProgressView(Context context, AttributeSet attrs, int defStyleAttr) {
+    public PagerIndicatorView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         init();
     }
@@ -106,8 +106,8 @@ public class ProgressView extends ViewGroup {
         final int childWidth = width / 4;
         final int height = getDefaultSize(getSuggestedMinimumHeight(), heightMeasureSpec);
         for (int i = 0; i < getChildCount(); i++) {
-            getChildAt(i).measure(MeasureSpec.makeMeasureSpec(childWidth, MeasureSpec.EXACTLY),
-                    MeasureSpec.makeMeasureSpec(height, MeasureSpec.EXACTLY));
+            getChildAt(i).measure(View.MeasureSpec.makeMeasureSpec(childWidth, View.MeasureSpec.EXACTLY),
+                    View.MeasureSpec.makeMeasureSpec(height, View.MeasureSpec.EXACTLY));
         }
 
         setMeasuredDimension(width, height);
